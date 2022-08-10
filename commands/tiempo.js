@@ -1,6 +1,5 @@
 const axios = require('axios').default
 module.exports = (ctx) => {
-    console.log(ctx.from.first_name)
     const { first_name, username, id } = ctx.from;
     const city = ctx.message.text.split(" ").slice(1).join(" ").toLowerCase();
     const citySanitize = city.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
