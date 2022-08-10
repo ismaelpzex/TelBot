@@ -1,0 +1,23 @@
+{
+  "name": "telbot",
+  "version": "1.0.0",
+  "description": "Bot de telegram by IPE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismaelpzex/TelBot.git"
+  },
+  "keywords": [
+    "bot",
+    "telegram"
+  ],
+  "author": "Ipe Services",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismaelpzex/TelBot/issues"
+  },
+  "homepage": "https://github.com/ismaelpzex/TelBot#readme"
+}
