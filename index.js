@@ -20,9 +20,11 @@ app.post('/url_telegram', (req, res) => {
 });
 
 //COMMANDS
-bot.command('test', require('./commands/test'));
-bot.command('tiempo', require('./commands/tiempo'));
+bot.command('/help', require('./commands/help'));
+bot.command('/test', require('./commands/test'));
+bot.command('/tiempo', require('./commands/tiempo'));
 bot.command('/coordenadas', require('./commands/coodenadas'));
+bot.command('/youtube', require('./commands/youtube'));
 
 bot.on('text', require('./nlu'));
 
