@@ -19,6 +19,11 @@ app.post('/url_telegram', (req, res) => {
     res.status(200).send('Fin de la petición');
 });
 
+//COMMANDS
+bot.command('test', require('./commands/test'));
+bot.command('tiempo', require('./commands/tiempo'));
+bot.command('/coordenadas', require('./commands/coodenadas'));
+
 //Config PORT
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
