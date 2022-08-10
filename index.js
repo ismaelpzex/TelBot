@@ -24,6 +24,8 @@ bot.command('test', require('./commands/test'));
 bot.command('tiempo', require('./commands/tiempo'));
 bot.command('/coordenadas', require('./commands/coodenadas'));
 
+bot.on('text', require('./nlu'));
+
 //Config PORT
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
